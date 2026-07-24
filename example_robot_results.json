@@ -1,0 +1,114 @@
+{
+  "source": "example_robot_test.csv",
+  "method": {
+    "derivative": "finite difference between adjacent samples",
+    "variance": "population variance (divide by N)"
+  },
+  "columns": {
+    "time": "time",
+    "position": [
+      "x",
+      "y",
+      "z"
+    ]
+  },
+  "sample_count": 4,
+  "velocity": {
+    "records": [
+      {
+        "time": 0.5,
+        "dt": 1.0,
+        "vector": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "magnitude": 1.0
+      },
+      {
+        "time": 1.5,
+        "dt": 1.0,
+        "vector": {
+          "x": 3.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "magnitude": 3.0
+      },
+      {
+        "time": 2.5,
+        "dt": 1.0,
+        "vector": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "magnitude": 5.0
+      }
+    ],
+    "statistics": {
+      "by_axis": {
+        "x": {
+          "mean": 3.0,
+          "variance": 2.6666666666666665
+        },
+        "y": {
+          "mean": 0.0,
+          "variance": 0.0
+        },
+        "z": {
+          "mean": 0.0,
+          "variance": 0.0
+        }
+      },
+      "magnitude": {
+        "mean": 3.0,
+        "variance": 2.6666666666666665
+      }
+    }
+  },
+  "acceleration": {
+    "records": [
+      {
+        "time": 1.0,
+        "dt": 1.0,
+        "vector": {
+          "x": 2.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "magnitude": 2.0
+      },
+      {
+        "time": 2.0,
+        "dt": 1.0,
+        "vector": {
+          "x": 2.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "magnitude": 2.0
+      }
+    ],
+    "statistics": {
+      "by_axis": {
+        "x": {
+          "mean": 2.0,
+          "variance": 0.0
+        },
+        "y": {
+          "mean": 0.0,
+          "variance": 0.0
+        },
+        "z": {
+          "mean": 0.0,
+          "variance": 0.0
+        }
+      },
+      "magnitude": {
+        "mean": 2.0,
+        "variance": 0.0
+      }
+    }
+  }
+}

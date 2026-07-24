@@ -1,0 +1,4 @@
+/build/
+/build_manual/
+/result.json
+/lessons/*/lesson[0-9]*
