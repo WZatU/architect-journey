@@ -1,0 +1,817 @@
+{
+  "version": "0.1.0",
+  "reviewed_on": "2026-10-15",
+  "lessons": [
+    {
+      "id": "L01",
+      "slug": "reproducible-python",
+      "project": "P01",
+      "title": "把实验变成可运行的软件",
+      "sources": [
+        "S02",
+        "S04"
+      ],
+      "why": "同一段算法在 Notebook 中成功，换一台机器就失败，通常与环境、路径和隐式状态有关。这里从可调用函数、命令行入口与测试边界开始。",
+      "tasks": [
+        "运行 P01，指出数据生成、划分、拟合与报告各自的函数边界。",
+        "把一个参数通过命令行传入，补输入错误和资源释放检查；解释线程、进程、异步各适用于什么负载。",
+        "建立新环境重跑，记录 Python 与依赖版本；用一个故意引入的错误演示最小复现和调试过程。"
+      ],
+      "acceptance": "在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+      "oral": "哪个状态依赖当前工作目录？CPU 密集任务能否仅靠 async 提速？",
+      "command": "python -m ai_path.experiment --seed 17 --output outputs/p01.json",
+      "path": "curriculum/lessons/L01-reproducible-python.md",
+      "knowledge_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "prerequisites": [],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L02",
+      "slug": "data-contracts-and-splits",
+      "project": "P01",
+      "title": "数据契约、SQL 与设备隔离",
+      "sources": [
+        "S01",
+        "S04"
+      ],
+      "why": "同一台设备的多次运行常共享偏差。随机拆行会把设备特征同时带进训练与测试，夸大对新设备的表现。",
+      "tasks": [
+        "检查 generated telemetry 的四个特征、标签来源和 device 分组，写数据字典。",
+        "将记录写入本地 SQLite，编写设备聚合与窗口查询；检查重复运行、缺失字段和无效范围。",
+        "对比随机拆行、按设备划分和时间前向划分；构造一个未来信息泄漏特征并说明为什么应排除。"
+      ],
+      "acceptance": "训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+      "oral": "为什么本项目不能宣称真实机器人的故障检测率？什么时候按设备划分还不够？",
+      "command": "python -m unittest discover -s tests -p test_experiment.py -v",
+      "path": "curriculum/lessons/L02-data-contracts-and-splits.md",
+      "knowledge_ids": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "prerequisites": [
+        "L01"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L03",
+      "slug": "baselines-and-uncertainty",
+      "project": "P01",
+      "title": "基线、指标与统计不确定性",
+      "sources": [
+        "S11",
+        "S01"
+      ],
+      "why": "多数类基线能暴露类别失衡。模型选择使用验证集，最后一次测试保留给选定方案；设备 Bootstrap 保留组内相关性。",
+      "tasks": [
+        "解释 DummyClassifier、标准化和 LogisticRegression 的位置，确认 scaler 没有看到测试数据。",
+        "手算一个小混淆矩阵的 Precision、Recall 与 F1，再解释宏平均为何可能与准确率不同。",
+        "根据设备 Bootstrap 区间讨论样本量，补充阈值成本表和概率校准图；比较一种树模型但不根据测试集反复调参。"
+      ],
+      "acceptance": "报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+      "oral": "Brier score 与 F1 测量什么？为什么逐行 Bootstrap 会低估某些不确定性？",
+      "command": "python -m ai_path.experiment --seed 17",
+      "path": "curriculum/lessons/L03-baselines-and-uncertainty.md",
+      "knowledge_ids": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        57
+      ],
+      "prerequisites": [
+        "L02"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L04",
+      "slug": "experiment-reports",
+      "project": "P01",
+      "title": "把实验写成可审查的研究记录",
+      "sources": [
+        "S02",
+        "S04"
+      ],
+      "why": "一个分数无法解释模型为何改善、在哪些条件下失败。研究记录把假设、资源、数据与结果对应起来。",
+      "tasks": [
+        "从报告中挑三种失败，按设备、噪声与标签边界分类，写可检验的假设。",
+        "只改变一个因素做消融，并保留失败运行；先规定验证选择规则，再查看测试结果。",
+        "使用实验报告模板写英文摘要，标明合成数据、个人修改和未验证的外推；选择一篇相关论文说明复现实验的差距。"
+      ],
+      "acceptance": "一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+      "oral": "如果验证集也被反复试验利用，应怎样保护最终评估？哪个结论需要新的真实数据？",
+      "command": "python scripts/run_cpu_baselines.py",
+      "path": "curriculum/lessons/L04-experiment-reports.md",
+      "knowledge_ids": [
+        56,
+        58,
+        59,
+        60,
+        186,
+        191,
+        192,
+        193,
+        195
+      ],
+      "prerequisites": [
+        "L03"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L05",
+      "slug": "documents-and-evidence",
+      "project": "P02",
+      "title": "把文档变成有来源的证据",
+      "sources": [
+        "S03"
+      ],
+      "why": "检索系统只能利用解析后保留下来的信息。这里先使用手写 JSON 文档，之后再引入 PDF、标题与表格解析。",
+      "tasks": [
+        "检查 12 份虚构 SDK 文档的 ID、来源、租户和过期时间，列出每个字段的用途。",
+        "加入一份自己的公开文档并保留来源，比较按段落与固定长度切块；为表格设计可追踪的表示。",
+        "实现文档更新与删除测试，给每条引用保留文档版本和片段位置。"
+      ],
+      "acceptance": "新增文档能追踪回原文；过期与删除内容不会进入新查询；解析丢失通过具体样例展示。",
+      "oral": "引用存在是否就能证明回答正确？更新一个文档会影响哪些缓存与索引？",
+      "command": "python -m ai_path.retrieval",
+      "path": "curriculum/lessons/L05-documents-and-evidence.md",
+      "knowledge_ids": [
+        86,
+        87,
+        88,
+        97,
+        98,
+        99
+      ],
+      "prerequisites": [
+        "L04"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L06",
+      "slug": "retrieval-comparison",
+      "project": "P02",
+      "title": "比较关键词、向量与重排序",
+      "sources": [
+        "S03"
+      ],
+      "why": "基线提供词项重叠与独立实现的 BM25。不同方法可能在短查询、精确编号和语义改写上各有表现。",
+      "tasks": [
+        "比较 overlap 与 BM25 的逐查询排名，指出相同分数与失败查询。",
+        "添加一个 Embedding 检索器，保持文档、过滤规则、查询和 K 相同；再尝试排序融合。",
+        "只对候选集增加重排序，测量召回、MRR、延迟和资源；单独收集未参与开发的查询。"
+      ],
+      "acceptance": "至少两个方法的逐查询结果、失败分组和可复现配置；独立 holdout 与公开开发集分开报告。",
+      "oral": "Recall@K 高是否保证生成答案正确？向量检索何时漏掉型号和编号？",
+      "command": "python -m unittest discover -s tests -p test_retrieval.py -v",
+      "path": "curriculum/lessons/L06-retrieval-comparison.md",
+      "knowledge_ids": [
+        66,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        96
+      ],
+      "prerequisites": [
+        "L05"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L07",
+      "slug": "context-and-model-adapters",
+      "project": "P02",
+      "title": "上下文、结构化输出与模型接入",
+      "sources": [
+        "S03"
+      ],
+      "why": "目前基线只检索，不调用语言模型。这个单元把证据拼接、模型适配器和输出校验作为独立扩展，避免把检索指标误报成回答质量。",
+      "tasks": [
+        "设计模型适配器接口与一个固定响应的测试替身，校验超时、错误与 JSON 输出。",
+        "把授权检索结果按预算组成上下文；构造无证据问题，定义澄清或拒答条件。",
+        "在明确请求数和预算后接入一个可用模型，用相同任务比较质量与成本；结构化数值通过受控 SQL 查询获取。"
+      ],
+      "acceptance": "模型调用与检索分别测试；引用逐项可验证；输出字段经过程序校验；实际模型结果与测试替身结果分开。",
+      "oral": "多租户过滤在哪里发生？为什么不能接受请求体传来的 tenant 作为身份？",
+      "command": "python -m unittest discover -s tests -p test_service.py -v",
+      "path": "curriculum/lessons/L07-context-and-model-adapters.md",
+      "knowledge_ids": [
+        69,
+        81,
+        82,
+        83,
+        84,
+        85,
+        95,
+        100
+      ],
+      "prerequisites": [
+        "L06"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L08",
+      "slug": "evaluation-and-release-gates",
+      "project": "P02",
+      "title": "评测集与发布门槛",
+      "sources": [
+        "S03",
+        "S04"
+      ],
+      "why": "开发查询用于找问题，冻结测试用于评估下一版。无答案问题使用独立分母，防止它们被当成普通命中问题计算。",
+      "tasks": [
+        "为查询标注相关文档和困难类型，检查标注分歧；补充中文、长文和无答案问题。",
+        "把事实正确、引用支持、任务完成分别评分；有程序验证器的任务优先用验证器。",
+        "如加入模型裁判，先对齐人工标注再设回归门槛，记录线上反馈如何变成新测试。"
+      ],
+      "acceptance": "冻结集、标注说明、分组指标和一条实际执行的发布检查；解释每个指标的分母。",
+      "oral": "怎样发现裁判偏好长回答？哪些反馈可以进入训练，哪些应继续留在测试？",
+      "command": "python -m ai_path.retrieval --output outputs/p02.json",
+      "path": "curriculum/lessons/L08-evaluation-and-release-gates.md",
+      "knowledge_ids": [
+        111,
+        112,
+        113,
+        114,
+        116,
+        118,
+        119,
+        120
+      ],
+      "prerequisites": [
+        "L07"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L09",
+      "slug": "tools-and-state-machines",
+      "project": "P03",
+      "title": "工具契约与任务状态机",
+      "sources": [
+        "S06"
+      ],
+      "why": "工具产生业务状态变化，控制器需要明确允许哪些转换。当前实现是确定性的模拟器，语言模型规划器留作后续适配。",
+      "tasks": [
+        "画出 WAITING_APPROVAL、APPROVED、SUCCEEDED 的转换，逐条对应公开方法。",
+        "为 propose、approve、execute 写参数、错误、前置条件和返回值说明。",
+        "设计一个可替换规划器，只允许输出受校验的工具调用；给无效工具和无限循环设置退出条件。"
+      ],
+      "acceptance": "状态转换图、工具契约和非法转换测试；接入规划器后仍经过同一控制器。",
+      "oral": "模型输出一个 execute 指令能否直接更改库存？任务成功怎样得到验证？",
+      "command": "python -m ai_path.workflow",
+      "path": "curriculum/lessons/L09-tools-and-state-machines.md",
+      "knowledge_ids": [
+        101,
+        102,
+        103,
+        104
+      ],
+      "prerequisites": [
+        "L08"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L10",
+      "slug": "durability-and-idempotency",
+      "project": "P03",
+      "title": "崩溃恢复、幂等与事务",
+      "sources": [
+        "S06"
+      ],
+      "why": "一次请求超时不说明动作没发生。示例把库存修改、任务终态和事件记录放在同一 SQLite 事务中，并验证重试只产生一次效果。",
+      "tasks": [
+        "重复执行同一任务，检查库存与 SUCCEEDED 事件数量；用相同幂等键提交不同参数。",
+        "在提交前注入故障，重建 WorkflowStore 后恢复；并发提交相同任务观察锁与唯一约束。",
+        "说明外部邮件或真实机器人命令无法被本地数据库回滚的原因，为其设计 Outbox 与对账流程。"
+      ],
+      "acceptance": "并发重复执行一次扣减；提交前故障无部分状态；写清本地事务保证与外部副作用边界。",
+      "oral": "这个示例是否证明了跨系统 exactly-once？数据库提交后但网络响应前崩溃会怎样？",
+      "command": "python -m unittest discover -s tests -p test_workflow.py -v",
+      "path": "curriculum/lessons/L10-durability-and-idempotency.md",
+      "knowledge_ids": [
+        105,
+        106,
+        146,
+        147
+      ],
+      "prerequisites": [
+        "L09"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L11",
+      "slug": "identity-approval-and-isolation",
+      "project": "P03",
+      "title": "身份、审批和执行边界",
+      "sources": [
+        "S06"
+      ],
+      "why": "示例中的 reviewer 是模拟输入。真实身份应由可信认证组件提供，工具权限和业务审批由服务端检查。",
+      "tasks": [
+        "验证读者角色无法批准任务，其他租户无法访问目标任务。",
+        "写一个身份适配器接口，把模拟角色与真实角色来源隔离；定义审批记录包含的请求内容摘要。",
+        "设计提示注入与不可信工具返回测试，列出哪些数据可以进入日志、哪些代码需要沙箱。"
+      ],
+      "acceptance": "角色、租户和审批绑定测试；一份数据保留与密钥处理说明；不得把 CLI 的模拟角色当成生产认证。",
+      "oral": "审批之后任务参数改变了怎么办？模型从文档读到新指令能否扩大工具权限？",
+      "command": "python -m unittest discover -s tests -p test_workflow.py -v",
+      "path": "curriculum/lessons/L11-identity-approval-and-isolation.md",
+      "knowledge_ids": [
+        107,
+        108,
+        109,
+        124,
+        181,
+        182,
+        183,
+        184
+      ],
+      "prerequisites": [
+        "L10"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L12",
+      "slug": "workflow-evaluation",
+      "project": "P03",
+      "title": "执行过程评测与故障实验",
+      "sources": [
+        "S06",
+        "S04"
+      ],
+      "why": "最终状态相同，过程仍可能重复扣减、泄漏数据或超出预算。过程评测检查工具轨迹与业务不变量。",
+      "tasks": [
+        "建立正常、拒批、库存不足、越权、重复和中断六类任务，记录期望事件。",
+        "为每步增加 trace_id、耗时和错误分类；控制记录中的敏感信息。",
+        "对比可重试与不可重试错误，写重试上限和人工接管条件；如果接入 LangGraph，保留相同业务验收。"
+      ],
+      "acceptance": "故障矩阵、轨迹记录和业务不变量检查；确定性控制器与 LLM 规划器效果分别报告。",
+      "oral": "成功率提升是否可能来自重复执行？哪个错误应立即停止重试？",
+      "command": "python -m unittest discover -s tests -p test_workflow.py -v",
+      "path": "curriculum/lessons/L12-workflow-evaluation.md",
+      "knowledge_ids": [
+        110,
+        115,
+        117,
+        185
+      ],
+      "prerequisites": [
+        "L11"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L13",
+      "slug": "api-and-component-boundaries",
+      "project": "P04",
+      "title": "服务 API 与组件边界",
+      "sources": [
+        "S02",
+        "S04"
+      ],
+      "why": "已有 localhost HTTP 适配器暴露健康检查与只读检索。组件逻辑与 HTTP 解耦，便于迁移到 FastAPI 等生产框架。",
+      "tasks": [
+        "运行服务，验证 200、400、401 和 404；检查身份映射与字段边界。",
+        "将 HTTP 适配器移植到 FastAPI，复用检索逻辑，并保持契约测试通过。",
+        "设计长任务的创建、状态、取消接口以及 SSE 流式响应；为任务与大文件选择不同存储。"
+      ],
+      "acceptance": "接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+      "oral": "为什么模型输出格式不能代替服务端校验？连接中断是否应该取消后台任务？",
+      "command": "AI_PATH_TOKEN=local-demo python -m ai_path.service --port 8000",
+      "path": "curriculum/lessons/L13-api-and-component-boundaries.md",
+      "knowledge_ids": [
+        121,
+        122,
+        123,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "prerequisites": [
+        "L12"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L14",
+      "slug": "architecture-and-capacity",
+      "project": "P04",
+      "title": "架构、容量、缓存与失败路径",
+      "sources": [
+        "S01",
+        "S12"
+      ],
+      "why": "以仓库现有 EAIC 架构为背景，给新增 AI 服务明确边界和依赖。小规模首先保证数据与故障语义，随后用负载数据判断拆分。",
+      "tasks": [
+        "画 HLD 和一次请求的时序，标出权威存储、缓存、模型服务、在线与离线处理。",
+        "假设给定峰值与延迟，估算在途请求；写缓存键、权限隔离、版本失效和背压策略。",
+        "写两份 ADR：模块化单体与服务拆分、重试与降级；展示数据库或模型服务不可用时的行为。"
+      ],
+      "acceptance": "一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+      "oral": "增加副本后哪个状态会冲突？缓存过期、模型超时和数据库故障分别如何响应？",
+      "command": "python scripts/benchmark_local.py --requests 40 --workers 4 --output outputs/p04-benchmark.json",
+      "path": "curriculum/lessons/L14-architecture-and-capacity.md",
+      "knowledge_ids": [
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        148,
+        149,
+        150
+      ],
+      "prerequisites": [
+        "L13"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L15",
+      "slug": "deployment-and-observability",
+      "project": "P04",
+      "title": "部署、CI 和可观测性",
+      "sources": [
+        "S02",
+        "S12"
+      ],
+      "why": "本仓库提供 CI 工作流与本地服务测试。容器、云部署和观测栈是明确列出的扩展任务，实际运行后再登记结果。",
+      "tasks": [
+        "阅读 CI，故意引入一个接口回归确认检查失败，再修复并保留证据。",
+        "制作容器并在选定平台启动预发布环境，配置探针、资源限制和服务端凭据。",
+        "打通日志、指标与 trace；演示一次灰度和回滚，记录镜像与模型版本对应关系。"
+      ],
+      "acceptance": "CI 记录、可复现镜像、预发布运行记录与回滚演示；没有运行过的基础设施继续标为 planned。",
+      "oral": "健康检查通过是否说明模型质量正常？哪个变更需要重建索引或重跑评测？",
+      "command": "python -m unittest discover -s tests -v",
+      "path": "curriculum/lessons/L15-deployment-and-observability.md",
+      "knowledge_ids": [
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157
+      ],
+      "prerequisites": [
+        "L14"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L16",
+      "slug": "slo-and-portfolio",
+      "project": "P04",
+      "title": "SLO、恢复与作品集证据",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "why": "架构判断需要运行数据与故障记录支持。这里把备份、恢复、成本和用户任务指标连接到面试能够核查的材料。",
+      "tasks": [
+        "定义检索延迟与错误率的窗口和目标，说明本地压测能支持哪些结论。",
+        "恢复一份任务数据库备份，测量恢复时间并核对业务记录；写一次故障复盘。",
+        "使用 case study 模板写问题、贡献、取舍、结果与限制，录制演示；将真实证据对应到三份目标 JD。"
+      ],
+      "acceptance": "SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+      "oral": "你会在什么信号出现时扩容？这次设计中代价最大的取舍是什么？",
+      "command": "python scripts/validate_curriculum.py",
+      "path": "curriculum/lessons/L16-slo-and-portfolio.md",
+      "knowledge_ids": [
+        158,
+        159,
+        160,
+        187,
+        188,
+        189,
+        190,
+        194,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "prerequisites": [
+        "L15"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L17",
+      "slug": "small-transformer",
+      "project": "P05",
+      "title": "小型 Transformer 的结构与数值",
+      "sources": [
+        "S05"
+      ],
+      "why": "独立训练脚本使用虚构文档构造字节级因果语言模型。它用于检查训练流程，不能据此声称学到了可靠的领域能力。",
+      "tasks": [
+        "检查嵌入、位置、因果掩码、残差和输出层的张量形状；手算参数和激活开销。",
+        "在安装 PyTorch 后运行 CPU smoke，确认损失有限；打乱掩码观察因果性测试会检查什么。",
+        "解释字节编码与子词编码的取舍，再分别讨论图像、图结构数据应使用的归纳偏置。"
+      ],
+      "acceptance": "有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+      "oral": "为什么不能对未来 Token 可见？模型训练损失下降能否证明文档问答正确？",
+      "command": "python projects/p05-language-model-lab/train_tiny_lm.py --steps 20 --output outputs/p05-smoke.pt",
+      "path": "curriculum/lessons/L17-small-transformer.md",
+      "knowledge_ids": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        67,
+        68,
+        70,
+        71
+      ],
+      "prerequisites": [
+        "L04"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L18",
+      "slug": "adaptation-and-data",
+      "project": "P05",
+      "title": "领域数据、SFT 与 LoRA",
+      "sources": [
+        "S07",
+        "S08"
+      ],
+      "why": "继续预训练、监督微调与参数高效适配对数据和目标有不同要求。先写清任务与预算，再决定是否加载外部模型。",
+      "tasks": [
+        "分别设计继续预训练文本与 SFT 对话样本，检查对话模板和标签掩码。",
+        "对选定模型计算全量、LoRA 和 QLoRA 的显存项目，记录模型与数据许可。",
+        "在另行准备的任务集上比较原模型、RAG 和适配模型；保留通用能力与领域任务的分组结果。"
+      ],
+      "acceptance": "数据卡、训练配置、预算与独立评测；LoRA/QLoRA 训练结果只有在实际运行后才填写。",
+      "oral": "微调能否代替经常变化的事实数据库？适配器节省了哪些状态，哪些仍然存在？",
+      "command": "python -m compileall -q projects/p05-language-model-lab",
+      "path": "curriculum/lessons/L18-adaptation-and-data.md",
+      "knowledge_ids": [
+        72,
+        73,
+        74,
+        75,
+        80
+      ],
+      "prerequisites": [
+        "L17"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L19",
+      "slug": "preference-and-rewards",
+      "project": "P05",
+      "title": "偏好、奖励与蒸馏实验设计",
+      "sources": [
+        "S08"
+      ],
+      "why": "偏好数据与奖励函数都会引入评价假设。本单元以实验设计为主，训练属于研究方向选修。",
+      "tasks": [
+        "构造偏好对与可程序验证的任务，说明 DPO 与在线奖励优化分别使用什么信号。",
+        "设计一个奖励投机样例，分别报告奖励、任务正确率和人工偏好。",
+        "为教师到学生的蒸馏写质量与资源比较方案；规定停止条件、样本量和计算预算。"
+      ],
+      "acceptance": "明确的目标、数据格式、失败案例和对照实验计划；没有训练记录时只提交设计结论。",
+      "oral": "偏好胜率提高为何可能损害事实性？奖励函数的盲点怎样被测试发现？",
+      "command": "python scripts/validate_curriculum.py",
+      "path": "curriculum/lessons/L19-preference-and-rewards.md",
+      "knowledge_ids": [
+        76,
+        77,
+        78,
+        79
+      ],
+      "prerequisites": [
+        "L18"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L20",
+      "slug": "training-reproducibility",
+      "project": "P05",
+      "title": "训练检查点与复现实验",
+      "sources": [
+        "S05",
+        "S10"
+      ],
+      "why": "训练恢复涉及模型之外的优化器、随机数和数据进度。先在单进程固定数据上验证，再扩展到分布式。",
+      "tasks": [
+        "检查 starter 保存的模型、优化器和 RNG 状态，在相同环境做连续与中断恢复对照。",
+        "比较两种学习率与一种正则化设置，只用验证集选择；记录数值稳定与数据加载问题。",
+        "保存模型卡、失败运行和最小复现实验；复现目标与资源受限的简化版本分别说明。"
+      ],
+      "acceptance": "恢复行为对照、环境与配置记录，以及清晰标明规模限制的实验报告。",
+      "oral": "只保存模型权重能否恢复相同训练轨迹？分布式采样器的进度还需要保存什么？",
+      "command": "python projects/p05-language-model-lab/train_tiny_lm.py --steps 10 --resume outputs/p05-smoke.pt --output outputs/p05-resumed.pt",
+      "path": "curriculum/lessons/L20-training-reproducibility.md",
+      "knowledge_ids": [
+        173,
+        180
+      ],
+      "prerequisites": [
+        "L19"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L21",
+      "slug": "gpu-resource-accounting",
+      "project": "P06",
+      "title": "GPU 资源预算与性能分析",
+      "sources": [
+        "S05"
+      ],
+      "why": "性能分析先确定测量边界与硬件，再判断计算、访存或数据供应是否限制吞吐。GPU 不可用时可以先完成预算与公式检查。",
+      "tasks": [
+        "列出目标设备和模型配置，计算权重、梯度、优化器、激活与缓存预算。",
+        "写预热、同步和计时边界；分析混合精度与量化对精度和硬件支持的要求。",
+        "在可用 GPU 上保存一份 profiler 轨迹，依据证据提出一个优化，并检查数值一致性。"
+      ],
+      "acceptance": "资源预算、测量协议与实际 profiler 证据；缺少 GPU 时只登记预算与计划。",
+      "oral": "显存占用下降为什么未必加速？计时前后的同步会改变哪些观察？",
+      "command": "python -m ai_path.trace_metrics --input data/inference-fixture.jsonl",
+      "path": "curriculum/lessons/L21-gpu-resource-accounting.md",
+      "knowledge_ids": [
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        172
+      ],
+      "prerequisites": [
+        "L17"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L22",
+      "slug": "serving-benchmark",
+      "project": "P06",
+      "title": "KV Cache、批处理与推理指标",
+      "sources": [
+        "S09"
+      ],
+      "why": "先用明确标为 fixture 的时间戳验证 TTFT、TPOT 和吞吐公式，再对真实服务收集数据；两类数据禁止混合。",
+      "tasks": [
+        "手算 fixture 的首 Token、后续 Token 间隔和观测窗口吞吐，对照分析器输出。",
+        "使用目标版本 vLLM 的官方 benchmark，在相同模型、输入输出长度与质量设置下比较并发度。",
+        "报告 Prefill、Decode、KV Cache 与批处理的影响，保留原始数据、失败请求和硬件信息。"
+      ],
+      "acceptance": "公式测试通过；真实 benchmark 报告包含版本与负载；单独报告 fixture 和实测结果。",
+      "oral": "一个 Token 的 TPOT 应填什么？固定并发闭环测试能否代表任意到达流量？",
+      "command": "python -m unittest discover -s tests -p test_trace_metrics.py -v",
+      "path": "curriculum/lessons/L22-serving-benchmark.md",
+      "knowledge_ids": [
+        167,
+        168,
+        169,
+        170,
+        171
+      ],
+      "prerequisites": [
+        "L21"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L23",
+      "slug": "compiler-and-kernels",
+      "project": "P06",
+      "title": "编译、融合算子与 Kernel",
+      "sources": [
+        "S05"
+      ],
+      "why": "算子优化需要与正确参考比较，并把编译与预热成本纳入报告。这里保留小算子实验范围，避免在没有证据时修改整套模型。",
+      "tasks": [
+        "选择一个小算子建立 CPU 或 PyTorch 参考，规定数值误差与输入形状范围。",
+        "比较 eager 与 torch.compile，记录图中断和首次编译；有条件时增加 Triton 实现。",
+        "通过 profiler 解释访存和 Kernel 启动变化，验证不同形状与精度下的结果。"
+      ],
+      "acceptance": "正确性测试、预热协议、编译与稳态耗时分别报告；硬件加速结论来自实际运行。",
+      "oral": "某个形状加速能否推及所有输入？融合如何改变中间张量与访存量？",
+      "command": "python scripts/validate_curriculum.py",
+      "path": "curriculum/lessons/L23-compiler-and-kernels.md",
+      "knowledge_ids": [
+        174,
+        175,
+        176
+      ],
+      "prerequisites": [
+        "L22"
+      ],
+      "learner_status": "not_started"
+    },
+    {
+      "id": "L24",
+      "slug": "distributed-training",
+      "project": "P06",
+      "title": "分布式训练与故障恢复",
+      "sources": [
+        "S10",
+        "S05"
+      ],
+      "why": "DDP、分片和模型并行解决不同资源限制。先建立单进程正确性参考，再测量多卡扩展和失败恢复。",
+      "tasks": [
+        "写出设备数、梯度累积和每卡批量对应的有效批量，说明数据采样与梯度同步。",
+        "在实际多卡环境选择 DDP 与一种分片方案比较吞吐、峰值内存与通信时间。",
+        "模拟进程退出，恢复检查点并验证样本进度、优化器和模型状态；记录资源与运行日志。"
+      ],
+      "acceptance": "单进程参考、多卡实测、扩展效率与恢复记录；未运行的并行方案继续标为设计选修。",
+      "oral": "卡数翻倍为何可能没有两倍吞吐？分片什么时候增加了通信成本？",
+      "command": "python scripts/validate_curriculum.py",
+      "path": "curriculum/lessons/L24-distributed-training.md",
+      "knowledge_ids": [
+        177,
+        178,
+        179
+      ],
+      "prerequisites": [
+        "L23"
+      ],
+      "learner_status": "not_started"
+    }
+  ]
+}

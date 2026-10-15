@@ -1,0 +1,2936 @@
+[
+  {
+    "id": 1,
+    "title": "Python 项目组织",
+    "outcome": "将数据、训练、推理和评测分成可独立调用的模块",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "类型系统",
+    "outcome": "明确参数和返回值，使用类型检查发现接口不一致",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "依赖管理",
+    "outcome": "从锁定依赖重建运行环境并记录版本",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "异常设计",
+    "outcome": "区分输入错误、暂时故障和程序缺陷",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "资源管理",
+    "outcome": "释放连接、文件和任务资源，检查长期运行泄漏",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "迭代器与生成器",
+    "outcome": "分批处理数据并解释内存占用",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "异步编程",
+    "outcome": "识别阻塞操作并实现有界并发 I/O",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "线程与进程",
+    "outcome": "根据负载和共享状态选择并发方式",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "测试设计",
+    "outcome": "用不同层级测试验证业务行为与边界",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "可重复运行",
+    "outcome": "通过配置、数据摘要和命令复现实验",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Git 协作",
+    "outcome": "提交小型变更、审查差异并解决冲突",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "代码可维护性",
+    "outcome": "控制职责与依赖，写出可接手的代码",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Linux 基础",
+    "outcome": "排查进程、权限、磁盘和退出状态",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "调试方法",
+    "outcome": "构造最小复现并缩小故障范围",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "内存管理",
+    "outcome": "定位对象引用或缓存导致的内存增长",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "并发正确性",
+    "outcome": "复现并处理竞争、锁和死锁",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "网络基础",
+    "outcome": "解释 DNS、TCP、TLS、HTTP 与超时",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "第二门语言",
+    "outcome": "应用方向补 TypeScript，系统方向补 C++ 接口",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "性能分析",
+    "outcome": "用调用与资源测量决定优化位置",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "AI 辅助开发",
+    "outcome": "验证生成代码并独立解释与修改",
+    "primary_project": "P01",
+    "primary_lesson": "L01",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 在新环境通过同一命令运行；错误输入返回可理解的错误；提交小型 PR、环境记录和一次调试复盘。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "SQL 查询",
+    "outcome": "使用关联、聚合、窗口函数与 CTE",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "数据库建模",
+    "outcome": "设计键、约束及对象关系",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "索引与执行计划",
+    "outcome": "解释查询开销与索引写入代价",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "事务与隔离级别",
+    "outcome": "说明并发读写异常和原子性边界",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "批量数据管道",
+    "outcome": "设计可重跑的数据处理步骤",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "流式数据处理",
+    "outcome": "处理事件时间、乱序、迟到与重复",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "数据契约",
+    "outcome": "约定类型、缺失值语义和兼容规则",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "数据质量检查",
+    "outcome": "检测缺失、异常范围、重复与分布变化",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "标注设计",
+    "outcome": "定义标签规则、抽样和分歧处理",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "数据血缘",
+    "outcome": "追踪来源、变换和模型版本",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "数据集划分",
+    "outcome": "根据设备、用户或时间隔离验证数据",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "时间点正确性",
+    "outcome": "排除预测时刻尚未出现的信息",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "抽样与代表性",
+    "outcome": "判断样本是否覆盖使用人群与困难条件",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "描述统计",
+    "outcome": "用分位数、方差和分布解释长尾",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "条件概率与贝叶斯推断",
+    "outcome": "说明新证据如何改变估计",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "参数估计",
+    "outcome": "解释最大似然、最大后验与假设",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "不确定性估计",
+    "outcome": "给出区间与适合相关样本的重采样",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "假设检验",
+    "outcome": "控制重复比较、样本量和停止规则",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "A/B 实验",
+    "outcome": "设计随机分组、指标和观察窗口",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "时间序列验证",
+    "outcome": "以前向或滚动方式模拟真实预测",
+    "primary_project": "P01",
+    "primary_lesson": "L02",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 训练、验证、测试设备集合两两不相交；SQL 与 Python 聚合一致；数据字典说明时间语义与标签产生方式。",
+    "sources": [
+      "S01",
+      "S04"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "任务建模",
+    "outcome": "把业务诉求转成明确的机器学习任务",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "基线方法",
+    "outcome": "以规则或简单模型衡量复杂方案收益",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "树模型",
+    "outcome": "与线性模型做相同数据条件的比较",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "特征工程",
+    "outcome": "处理数值、类别、缺失和交互",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "预处理管道",
+    "outcome": "只在训练数据拟合预处理变换",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "损失函数选择",
+    "outcome": "把优化目标与业务错误成本对应",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "正则化",
+    "outcome": "检验权重衰减、早停或 Dropout 的作用",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "优化器行为",
+    "outcome": "解释更新规则和收敛问题",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 49,
+    "title": "学习率调度",
+    "outcome": "根据曲线检验预热与衰减",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 50,
+    "title": "训练故障诊断",
+    "outcome": "定位梯度、数据或数值异常",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "分类评价",
+    "outcome": "根据类别比例选择合适分类指标",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 52,
+    "title": "回归评价",
+    "outcome": "解释 MAE、RMSE 的单位与异常值敏感性",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "排序评价",
+    "outcome": "解释 NDCG、MAP 与 Recall@K",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "概率校准",
+    "outcome": "比较预测概率与实际发生频率",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "决策阈值",
+    "outcome": "根据漏报、误报和处理成本调整阈值",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 56,
+    "title": "分组误差分析",
+    "outcome": "按设备、场景和困难类型定位失败",
+    "primary_project": "P01",
+    "primary_lesson": "L04",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 57,
+    "title": "超参数搜索",
+    "outcome": "用验证集与预算安排公平搜索",
+    "primary_project": "P01",
+    "primary_lesson": "L03",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 报告包含基线、验证选择依据、测试结果、区间与失败样本；新增方案使用相同设备划分。",
+    "sources": [
+      "S11",
+      "S01"
+    ]
+  },
+  {
+    "id": 58,
+    "title": "消融实验",
+    "outcome": "单独改变一个因素并保留对照",
+    "primary_project": "P01",
+    "primary_lesson": "L04",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 59,
+    "title": "实验复现",
+    "outcome": "保留代码、数据、环境、随机状态和配置",
+    "primary_project": "P01",
+    "primary_lesson": "L04",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 60,
+    "title": "泛化与鲁棒性",
+    "outcome": "测试新条件、噪声和输入扰动",
+    "primary_project": "P01",
+    "primary_lesson": "L04",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 61,
+    "title": "数值稳定性",
+    "outcome": "识别浮点误差和稳定计算形式",
+    "primary_project": "P05",
+    "primary_lesson": "L17",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 62,
+    "title": "模型归纳偏置",
+    "outcome": "解释卷积、图和序列结构的适用性",
+    "primary_project": "P05",
+    "primary_lesson": "L17",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 63,
+    "title": "Attention 计算",
+    "outcome": "解释 QKV、形状及计算存储开销",
+    "primary_project": "P05",
+    "primary_lesson": "L17",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 64,
+    "title": "注意力掩码",
+    "outcome": "验证因果可见性与 Padding 行为",
+    "primary_project": "P05",
+    "primary_lesson": "L17",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 65,
+    "title": "Tokenizer",
+    "outcome": "比较编码方式、长度和特殊符号",
+    "primary_project": "P05",
+    "primary_lesson": "L17",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Embedding 学习",
+    "outcome": "解释相似度、对比目标和负样本",
+    "primary_project": "P02",
+    "primary_lesson": "L06",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 至少两个方法的逐查询结果、失败分组和可复现配置；独立 holdout 与公开开发集分开报告。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 67,
+    "title": "位置编码",
+    "outcome": "解释位置关系和长序列外推限制",
+    "primary_project": "P05",
+    "primary_lesson": "L17",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 68,
+    "title": "残差与归一化",
+    "outcome": "分析梯度传播和训练稳定性",
+    "primary_project": "P05",
+    "primary_lesson": "L17",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 69,
+    "title": "长上下文利用",
+    "outcome": "验证远处证据是否被正确利用",
+    "primary_project": "P02",
+    "primary_lesson": "L07",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 模型调用与检索分别测试；引用逐项可验证；输出字段经过程序校验；实际模型结果与测试替身结果分开。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 70,
+    "title": "解码策略",
+    "outcome": "测量温度或采样设置对任务的影响",
+    "primary_project": "P05",
+    "primary_lesson": "L17",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 71,
+    "title": "预训练目标",
+    "outcome": "解释 Token 预测目标与能力边界",
+    "primary_project": "P05",
+    "primary_lesson": "L17",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 有限损失、形状记录、参数预算与因果性检查；训练报告记录真实运行环境。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 72,
+    "title": "领域继续预训练",
+    "outcome": "检验领域收益、遗忘和污染",
+    "primary_project": "P05",
+    "primary_lesson": "L18",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 数据卡、训练配置、预算与独立评测；LoRA/QLoRA 训练结果只有在实际运行后才填写。",
+    "sources": [
+      "S07",
+      "S08"
+    ]
+  },
+  {
+    "id": 73,
+    "title": "监督微调 SFT",
+    "outcome": "正确处理模板、标签掩码和截断",
+    "primary_project": "P05",
+    "primary_lesson": "L18",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 数据卡、训练配置、预算与独立评测；LoRA/QLoRA 训练结果只有在实际运行后才填写。",
+    "sources": [
+      "S07",
+      "S08"
+    ]
+  },
+  {
+    "id": 74,
+    "title": "LoRA",
+    "outcome": "解释低秩适配的参数、目标层和开销",
+    "primary_project": "P05",
+    "primary_lesson": "L18",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 数据卡、训练配置、预算与独立评测；LoRA/QLoRA 训练结果只有在实际运行后才填写。",
+    "sources": [
+      "S07",
+      "S08"
+    ]
+  },
+  {
+    "id": 75,
+    "title": "QLoRA",
+    "outcome": "区分量化基座与适配器状态",
+    "primary_project": "P05",
+    "primary_lesson": "L18",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 数据卡、训练配置、预算与独立评测；LoRA/QLoRA 训练结果只有在实际运行后才填写。",
+    "sources": [
+      "S07",
+      "S08"
+    ]
+  },
+  {
+    "id": 76,
+    "title": "偏好优化 DPO",
+    "outcome": "理解偏好对、参考模型和优化信号",
+    "primary_project": "P05",
+    "primary_lesson": "L19",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 明确的目标、数据格式、失败案例和对照实验计划；没有训练记录时只提交设计结论。",
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": 77,
+    "title": "强化学习后训练",
+    "outcome": "解释策略、奖励、采样与更新",
+    "primary_project": "P05",
+    "primary_lesson": "L19",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 明确的目标、数据格式、失败案例和对照实验计划；没有训练记录时只提交设计结论。",
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": 78,
+    "title": "奖励投机",
+    "outcome": "构造高奖励但任务失败的例子",
+    "primary_project": "P05",
+    "primary_lesson": "L19",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 明确的目标、数据格式、失败案例和对照实验计划；没有训练记录时只提交设计结论。",
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": 79,
+    "title": "知识蒸馏",
+    "outcome": "以质量与资源指标比较教师和学生",
+    "primary_project": "P05",
+    "primary_lesson": "L19",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 明确的目标、数据格式、失败案例和对照实验计划；没有训练记录时只提交设计结论。",
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": 80,
+    "title": "多模态模型",
+    "outcome": "分别测试识别、定位与推理能力",
+    "primary_project": "P05",
+    "primary_lesson": "L18",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 数据卡、训练配置、预算与独立评测；LoRA/QLoRA 训练结果只有在实际运行后才填写。",
+    "sources": [
+      "S07",
+      "S08"
+    ]
+  },
+  {
+    "id": 81,
+    "title": "模型 API 集成",
+    "outcome": "处理鉴权、版本、错误和超时",
+    "primary_project": "P02",
+    "primary_lesson": "L07",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 模型调用与检索分别测试；引用逐项可验证；输出字段经过程序校验；实际模型结果与测试替身结果分开。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 82,
+    "title": "提示设计",
+    "outcome": "以固定任务集检验指令与示例",
+    "primary_project": "P02",
+    "primary_lesson": "L07",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 模型调用与检索分别测试；引用逐项可验证；输出字段经过程序校验；实际模型结果与测试替身结果分开。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 83,
+    "title": "结构化输出",
+    "outcome": "通过程序校验结构和业务约束",
+    "primary_project": "P02",
+    "primary_lesson": "L07",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 模型调用与检索分别测试；引用逐项可验证；输出字段经过程序校验；实际模型结果与测试替身结果分开。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 84,
+    "title": "上下文组织",
+    "outcome": "分配指令、历史、证据与工具预算",
+    "primary_project": "P02",
+    "primary_lesson": "L07",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 模型调用与检索分别测试；引用逐项可验证；输出字段经过程序校验；实际模型结果与测试替身结果分开。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 85,
+    "title": "模型路由",
+    "outcome": "以任务效果与资源实测决定路由",
+    "primary_project": "P02",
+    "primary_lesson": "L07",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 模型调用与检索分别测试；引用逐项可验证；输出字段经过程序校验；实际模型结果与测试替身结果分开。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 86,
+    "title": "RAG 适用条件",
+    "outcome": "判断哪些事实需要检索与更新",
+    "primary_project": "P02",
+    "primary_lesson": "L05",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 新增文档能追踪回原文；过期与删除内容不会进入新查询；解析丢失通过具体样例展示。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 87,
+    "title": "文档解析",
+    "outcome": "保留标题、表格、OCR 与来源关系",
+    "primary_project": "P02",
+    "primary_lesson": "L05",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 新增文档能追踪回原文；过期与删除内容不会进入新查询；解析丢失通过具体样例展示。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 88,
+    "title": "文档切块",
+    "outcome": "比较结构、长度和重叠的检索表现",
+    "primary_project": "P02",
+    "primary_lesson": "L05",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 新增文档能追踪回原文；过期与删除内容不会进入新查询；解析丢失通过具体样例展示。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 89,
+    "title": "检索模型选型",
+    "outcome": "覆盖专业词、短查询和多语言",
+    "primary_project": "P02",
+    "primary_lesson": "L06",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 至少两个方法的逐查询结果、失败分组和可复现配置；独立 holdout 与公开开发集分开报告。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 90,
+    "title": "向量索引",
+    "outcome": "比较召回、内存、构建与查询成本",
+    "primary_project": "P02",
+    "primary_lesson": "L06",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 至少两个方法的逐查询结果、失败分组和可复现配置；独立 holdout 与公开开发集分开报告。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 91,
+    "title": "关键词检索",
+    "outcome": "理解 BM25 与精确标识符匹配",
+    "primary_project": "P02",
+    "primary_lesson": "L06",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 至少两个方法的逐查询结果、失败分组和可复现配置；独立 holdout 与公开开发集分开报告。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 92,
+    "title": "混合检索",
+    "outcome": "在相同条件下比较排序融合",
+    "primary_project": "P02",
+    "primary_lesson": "L06",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 至少两个方法的逐查询结果、失败分组和可复现配置；独立 holdout 与公开开发集分开报告。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 93,
+    "title": "重排序",
+    "outcome": "测量候选集重排的质量与延迟",
+    "primary_project": "P02",
+    "primary_lesson": "L06",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 至少两个方法的逐查询结果、失败分组和可复现配置；独立 holdout 与公开开发集分开报告。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 94,
+    "title": "查询改写",
+    "outcome": "处理省略和指代并检查语义偏移",
+    "primary_project": "P02",
+    "primary_lesson": "L06",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 至少两个方法的逐查询结果、失败分组和可复现配置；独立 holdout 与公开开发集分开报告。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 95,
+    "title": "检索权限过滤",
+    "outcome": "确保上下文符合身份、租户和时效",
+    "primary_project": "P02",
+    "primary_lesson": "L07",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 模型调用与检索分别测试；引用逐项可验证；输出字段经过程序校验；实际模型结果与测试替身结果分开。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 96,
+    "title": "检索评价",
+    "outcome": "构造相关性标注并计算召回与排名",
+    "primary_project": "P02",
+    "primary_lesson": "L06",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 至少两个方法的逐查询结果、失败分组和可复现配置；独立 holdout 与公开开发集分开报告。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 97,
+    "title": "证据引用",
+    "outcome": "逐项验证来源能否支持结论",
+    "primary_project": "P02",
+    "primary_lesson": "L05",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 新增文档能追踪回原文；过期与删除内容不会进入新查询；解析丢失通过具体样例展示。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 98,
+    "title": "证据不足处理",
+    "outcome": "定义拒答、澄清与人工处理路径",
+    "primary_project": "P02",
+    "primary_lesson": "L05",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 新增文档能追踪回原文；过期与删除内容不会进入新查询；解析丢失通过具体样例展示。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 99,
+    "title": "索引生命周期",
+    "outcome": "处理更新、删除、重建与缓存失效",
+    "primary_project": "P02",
+    "primary_lesson": "L05",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 新增文档能追踪回原文；过期与删除内容不会进入新查询；解析丢失通过具体样例展示。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 100,
+    "title": "结构化数据查询",
+    "outcome": "通过受控 SQL 或业务接口读取事实",
+    "primary_project": "P02",
+    "primary_lesson": "L07",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 模型调用与检索分别测试；引用逐项可验证；输出字段经过程序校验；实际模型结果与测试替身结果分开。",
+    "sources": [
+      "S03"
+    ]
+  },
+  {
+    "id": 101,
+    "title": "工具接口设计",
+    "outcome": "定义参数、前置条件、返回与错误",
+    "primary_project": "P03",
+    "primary_lesson": "L09",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 状态转换图、工具契约和非法转换测试；接入规划器后仍经过同一控制器。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 102,
+    "title": "执行状态机",
+    "outcome": "规定允许的转换和失败恢复位置",
+    "primary_project": "P03",
+    "primary_lesson": "L09",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 状态转换图、工具契约和非法转换测试；接入规划器后仍经过同一控制器。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 103,
+    "title": "工作流选择",
+    "outcome": "选择固定步骤与动态规划的组合",
+    "primary_project": "P03",
+    "primary_lesson": "L09",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 状态转换图、工具契约和非法转换测试；接入规划器后仍经过同一控制器。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 104,
+    "title": "终止条件",
+    "outcome": "限制步骤、时间、预算与无法继续状态",
+    "primary_project": "P03",
+    "primary_lesson": "L09",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 状态转换图、工具契约和非法转换测试；接入规划器后仍经过同一控制器。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 105,
+    "title": "记忆管理",
+    "outcome": "区分会话状态、长期记忆和失效规则",
+    "primary_project": "P03",
+    "primary_lesson": "L10",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 并发重复执行一次扣减；提交前故障无部分状态；写清本地事务保证与外部副作用边界。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 106,
+    "title": "持久化执行",
+    "outcome": "恢复任务进度并核对已产生的效果",
+    "primary_project": "P03",
+    "primary_lesson": "L10",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 并发重复执行一次扣减；提交前故障无部分状态；写清本地事务保证与外部副作用边界。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 107,
+    "title": "操作预览与确认",
+    "outcome": "把授权绑定到可检查的具体操作",
+    "primary_project": "P03",
+    "primary_lesson": "L11",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 角色、租户和审批绑定测试；一份数据保留与密钥处理说明；不得把 CLI 的模拟角色当成生产认证。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 108,
+    "title": "工具权限范围",
+    "outcome": "限制任务能够访问的数据与动作",
+    "primary_project": "P03",
+    "primary_lesson": "L11",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 角色、租户和审批绑定测试；一份数据保留与密钥处理说明；不得把 CLI 的模拟角色当成生产认证。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 109,
+    "title": "执行沙箱",
+    "outcome": "隔离不可信代码、凭据和资源",
+    "primary_project": "P03",
+    "primary_lesson": "L11",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 角色、租户和审批绑定测试；一份数据保留与密钥处理说明；不得把 CLI 的模拟角色当成生产认证。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Agent 追踪",
+    "outcome": "记录调用、结果、状态和耗时",
+    "primary_project": "P03",
+    "primary_lesson": "L12",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 故障矩阵、轨迹记录和业务不变量检查；确定性控制器与 LLM 规划器效果分别报告。",
+    "sources": [
+      "S06",
+      "S04"
+    ]
+  },
+  {
+    "id": 111,
+    "title": "评测集设计",
+    "outcome": "覆盖真实任务与困难情况并保留独立测试",
+    "primary_project": "P02",
+    "primary_lesson": "L08",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 冻结集、标注说明、分组指标和一条实际执行的发布检查；解释每个指标的分母。",
+    "sources": [
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": 112,
+    "title": "固定回归样例",
+    "outcome": "把已知失败转换成稳定检查",
+    "primary_project": "P02",
+    "primary_lesson": "L08",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 冻结集、标注说明、分组指标和一条实际执行的发布检查；解释每个指标的分母。",
+    "sources": [
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": 113,
+    "title": "可验证评分",
+    "outcome": "优先使用断言、执行结果或明确规则",
+    "primary_project": "P02",
+    "primary_lesson": "L08",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 冻结集、标注说明、分组指标和一条实际执行的发布检查；解释每个指标的分母。",
+    "sources": [
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": 114,
+    "title": "模型裁判校准",
+    "outcome": "用人工标注检查一致性和偏差",
+    "primary_project": "P02",
+    "primary_lesson": "L08",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 冻结集、标注说明、分组指标和一条实际执行的发布检查；解释每个指标的分母。",
+    "sources": [
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": 115,
+    "title": "执行过程评价",
+    "outcome": "检查工具序列、参数、恢复和最终结果",
+    "primary_project": "P03",
+    "primary_lesson": "L12",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 故障矩阵、轨迹记录和业务不变量检查；确定性控制器与 LLM 规划器效果分别报告。",
+    "sources": [
+      "S06",
+      "S04"
+    ]
+  },
+  {
+    "id": 116,
+    "title": "事实性评价",
+    "outcome": "区分正确性、引用支持与任务满足",
+    "primary_project": "P02",
+    "primary_lesson": "L08",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 冻结集、标注说明、分组指标和一条实际执行的发布检查；解释每个指标的分母。",
+    "sources": [
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": 117,
+    "title": "故障注入",
+    "outcome": "模拟超时、坏格式、缺失与恶意内容",
+    "primary_project": "P03",
+    "primary_lesson": "L12",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 故障矩阵、轨迹记录和业务不变量检查；确定性控制器与 LLM 规划器效果分别报告。",
+    "sources": [
+      "S06",
+      "S04"
+    ]
+  },
+  {
+    "id": 118,
+    "title": "线上效果指标",
+    "outcome": "记录完成率、人工修改率和反馈口径",
+    "primary_project": "P02",
+    "primary_lesson": "L08",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 冻结集、标注说明、分组指标和一条实际执行的发布检查；解释每个指标的分母。",
+    "sources": [
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": 119,
+    "title": "评测发布门槛",
+    "outcome": "按质量、失败率和成本决定是否发布",
+    "primary_project": "P02",
+    "primary_lesson": "L08",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 冻结集、标注说明、分组指标和一条实际执行的发布检查；解释每个指标的分母。",
+    "sources": [
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": 120,
+    "title": "反馈处理",
+    "outcome": "把用户问题转成复现、标注与回归",
+    "primary_project": "P02",
+    "primary_lesson": "L08",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p02-sdk-evidence-search/: 冻结集、标注说明、分组指标和一条实际执行的发布检查；解释每个指标的分母。",
+    "sources": [
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": 121,
+    "title": "后端 API 开发",
+    "outcome": "提供可调用、可验证的服务接口",
+    "primary_project": "P04",
+    "primary_lesson": "L13",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 122,
+    "title": "通信接口选择",
+    "outcome": "按负载和调用方式选择 REST 或 RPC",
+    "primary_project": "P04",
+    "primary_lesson": "L13",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 123,
+    "title": "请求校验",
+    "outcome": "在昂贵处理前限制形状、长度和范围",
+    "primary_project": "P04",
+    "primary_lesson": "L13",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 124,
+    "title": "认证与授权",
+    "outcome": "分别检查身份和允许操作",
+    "primary_project": "P03",
+    "primary_lesson": "L11",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 角色、租户和审批绑定测试；一份数据保留与密钥处理说明；不得把 CLI 的模拟角色当成生产认证。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 125,
+    "title": "接口版本兼容",
+    "outcome": "验证旧客户端与新字段行为",
+    "primary_project": "P04",
+    "primary_lesson": "L13",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 126,
+    "title": "长任务接口",
+    "outcome": "支持创建、状态、取消和结果查询",
+    "primary_project": "P04",
+    "primary_lesson": "L13",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 127,
+    "title": "流式响应",
+    "outcome": "处理部分结果、断线和取消",
+    "primary_project": "P04",
+    "primary_lesson": "L13",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 128,
+    "title": "对象存储",
+    "outcome": "管理大文件版本、位置和访问",
+    "primary_project": "P04",
+    "primary_lesson": "L13",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 129,
+    "title": "存储职责划分",
+    "outcome": "按持久性与访问方式选择存储",
+    "primary_project": "P04",
+    "primary_lesson": "L13",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 130,
+    "title": "组件边界",
+    "outcome": "明确业务、检索、推理和调度职责",
+    "primary_project": "P04",
+    "primary_lesson": "L13",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 接口契约、错误示例与可运行服务；迁移前后语义一致；只读检索和有副作用操作分开授权。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 131,
+    "title": "架构约束收集",
+    "outcome": "记录用户、峰值、延迟、数据和预算",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 132,
+    "title": "总体架构设计",
+    "outcome": "说明组件与数据流的职责",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 133,
+    "title": "详细设计",
+    "outcome": "写清接口、状态、表结构和失败路径",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 134,
+    "title": "单体与微服务取舍",
+    "outcome": "根据团队、部署和负载决定拆分",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 135,
+    "title": "在线与离线处理",
+    "outcome": "划分预处理、训练与在线预测",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 136,
+    "title": "控制面与数据面",
+    "outcome": "区分配置调度与实际计算流量",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 137,
+    "title": "无状态服务设计",
+    "outcome": "支持重启、副本与外部状态一致性",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 138,
+    "title": "模型服务抽象",
+    "outcome": "统一接口并保留能力与错误差异",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 139,
+    "title": "版本兼容关系",
+    "outcome": "关联模型、提示、索引、数据和代码",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 140,
+    "title": "架构决策记录 ADR",
+    "outcome": "保留约束、备选、代价与选择理由",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 141,
+    "title": "容量估算",
+    "outcome": "在适用条件下估算速率、时延与在途请求",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 142,
+    "title": "尾部延迟",
+    "outcome": "解释 P95/P99 与分组长尾",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 143,
+    "title": "负载测试",
+    "outcome": "记录请求长度、并发和到达模式",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 144,
+    "title": "队列与背压",
+    "outcome": "限制积压并定义拒绝与等待策略",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 145,
+    "title": "缓存设计",
+    "outcome": "检查键、权限、版本与失效",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 146,
+    "title": "幂等性",
+    "outcome": "验证重复请求不产生第二次业务效果",
+    "primary_project": "P03",
+    "primary_lesson": "L10",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 并发重复执行一次扣减；提交前故障无部分状态；写清本地事务保证与外部副作用边界。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 147,
+    "title": "消息投递语义",
+    "outcome": "处理重复、丢失和事务消息边界",
+    "primary_project": "P03",
+    "primary_lesson": "L10",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 并发重复执行一次扣减；提交前故障无部分状态；写清本地事务保证与外部副作用边界。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 148,
+    "title": "分布式一致性",
+    "outcome": "说明暂时不一致与对账修复",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 149,
+    "title": "重试预算",
+    "outcome": "结合超时、退避和抖动控制请求放大",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 150,
+    "title": "故障隔离与降级",
+    "outcome": "限制故障扩散并提供可用路径",
+    "primary_project": "P04",
+    "primary_lesson": "L14",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: 一张架构图、一个容量表、两份 ADR 与故障路径；假设和实测数据分开标记。",
+    "sources": [
+      "S01",
+      "S12"
+    ]
+  },
+  {
+    "id": 151,
+    "title": "容器化",
+    "outcome": "构建可重复启动且资源明确的镜像",
+    "primary_project": "P04",
+    "primary_lesson": "L15",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: CI 记录、可复现镜像、预发布运行记录与回滚演示；没有运行过的基础设施继续标为 planned。",
+    "sources": [
+      "S02",
+      "S12"
+    ]
+  },
+  {
+    "id": 152,
+    "title": "持续集成 CI",
+    "outcome": "自动检查代码、测试、构建与契约",
+    "primary_project": "P04",
+    "primary_lesson": "L15",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: CI 记录、可复现镜像、预发布运行记录与回滚演示；没有运行过的基础设施继续标为 planned。",
+    "sources": [
+      "S02",
+      "S12"
+    ]
+  },
+  {
+    "id": 153,
+    "title": "持续交付 CD",
+    "outcome": "验证预发布、灰度和回滚",
+    "primary_project": "P04",
+    "primary_lesson": "L15",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: CI 记录、可复现镜像、预发布运行记录与回滚演示；没有运行过的基础设施继续标为 planned。",
+    "sources": [
+      "S02",
+      "S12"
+    ]
+  },
+  {
+    "id": 154,
+    "title": "云平台基础",
+    "outcome": "实际使用计算、网络、存储与权限",
+    "primary_project": "P04",
+    "primary_lesson": "L15",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: CI 记录、可复现镜像、预发布运行记录与回滚演示；没有运行过的基础设施继续标为 planned。",
+    "sources": [
+      "S02",
+      "S12"
+    ]
+  },
+  {
+    "id": 155,
+    "title": "Kubernetes 基础",
+    "outcome": "理解工作负载、探针和资源调度",
+    "primary_project": "P04",
+    "primary_lesson": "L15",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: CI 记录、可复现镜像、预发布运行记录与回滚演示；没有运行过的基础设施继续标为 planned。",
+    "sources": [
+      "S02",
+      "S12"
+    ]
+  },
+  {
+    "id": 156,
+    "title": "计算任务调度",
+    "outcome": "按服务、批处理、训练选择调度方式",
+    "primary_project": "P04",
+    "primary_lesson": "L15",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: CI 记录、可复现镜像、预发布运行记录与回滚演示；没有运行过的基础设施继续标为 planned。",
+    "sources": [
+      "S02",
+      "S12"
+    ]
+  },
+  {
+    "id": 157,
+    "title": "可观测性",
+    "outcome": "连接指标、日志与追踪定位失败",
+    "primary_project": "P04",
+    "primary_lesson": "L15",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: CI 记录、可复现镜像、预发布运行记录与回滚演示；没有运行过的基础设施继续标为 planned。",
+    "sources": [
+      "S02",
+      "S12"
+    ]
+  },
+  {
+    "id": 158,
+    "title": "服务目标 SLO",
+    "outcome": "定义用户可感知目标、窗口与错误预算",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 159,
+    "title": "备份与恢复",
+    "outcome": "验证可恢复性并记录 RPO/RTO",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 160,
+    "title": "故障响应",
+    "outcome": "演练诊断、止损、回滚与复盘",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 161,
+    "title": "GPU 结构",
+    "outcome": "解释执行单元、线程束与带宽",
+    "primary_project": "P06",
+    "primary_lesson": "L21",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 资源预算、测量协议与实际 profiler 证据；缺少 GPU 时只登记预算与计划。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 162,
+    "title": "计算与访存瓶颈",
+    "outcome": "结合算术强度分析性能上限",
+    "primary_project": "P06",
+    "primary_lesson": "L21",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 资源预算、测量协议与实际 profiler 证据；缺少 GPU 时只登记预算与计划。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 163,
+    "title": "显存预算",
+    "outcome": "分项核算权重、梯度、优化器、激活与缓存",
+    "primary_project": "P06",
+    "primary_lesson": "L21",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 资源预算、测量协议与实际 profiler 证据；缺少 GPU 时只登记预算与计划。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 164,
+    "title": "GPU 测量方法",
+    "outcome": "设置预热、同步和计时边界",
+    "primary_project": "P06",
+    "primary_lesson": "L21",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 资源预算、测量协议与实际 profiler 证据；缺少 GPU 时只登记预算与计划。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 165,
+    "title": "混合精度",
+    "outcome": "验证数值、硬件支持与性能收益",
+    "primary_project": "P06",
+    "primary_lesson": "L21",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 资源预算、测量协议与实际 profiler 证据；缺少 GPU 时只登记预算与计划。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 166,
+    "title": "量化",
+    "outcome": "分别比较权重、激活和质量变化",
+    "primary_project": "P06",
+    "primary_lesson": "L21",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 资源预算、测量协议与实际 profiler 证据；缺少 GPU 时只登记预算与计划。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 167,
+    "title": "Prefill 与 Decode",
+    "outcome": "分别分析输入处理与逐 Token 生成",
+    "primary_project": "P06",
+    "primary_lesson": "L22",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 公式测试通过；真实 benchmark 报告包含版本与负载；单独报告 fixture 和实测结果。",
+    "sources": [
+      "S09"
+    ]
+  },
+  {
+    "id": 168,
+    "title": "KV Cache 管理",
+    "outcome": "估算长度、并发与缓存增长",
+    "primary_project": "P06",
+    "primary_lesson": "L22",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 公式测试通过；真实 benchmark 报告包含版本与负载；单独报告 fixture 和实测结果。",
+    "sources": [
+      "S09"
+    ]
+  },
+  {
+    "id": 169,
+    "title": "推理批处理",
+    "outcome": "解释动态与连续批处理的等待取舍",
+    "primary_project": "P06",
+    "primary_lesson": "L22",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 公式测试通过；真实 benchmark 报告包含版本与负载；单独报告 fixture 和实测结果。",
+    "sources": [
+      "S09"
+    ]
+  },
+  {
+    "id": 170,
+    "title": "推理引擎使用",
+    "outcome": "记录引擎、模型、硬件与测试条件",
+    "primary_project": "P06",
+    "primary_lesson": "L22",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 公式测试通过；真实 benchmark 报告包含版本与负载；单独报告 fixture 和实测结果。",
+    "sources": [
+      "S09"
+    ]
+  },
+  {
+    "id": 171,
+    "title": "推理性能指标",
+    "outcome": "分别计算 TTFT、TPOT、总延迟和吞吐",
+    "primary_project": "P06",
+    "primary_lesson": "L22",
+    "level": "elective",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 公式测试通过；真实 benchmark 报告包含版本与负载；单独报告 fixture 和实测结果。",
+    "sources": [
+      "S09"
+    ]
+  },
+  {
+    "id": 172,
+    "title": "GPU 性能剖析",
+    "outcome": "从轨迹定位算子、等待与传输",
+    "primary_project": "P06",
+    "primary_lesson": "L21",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 资源预算、测量协议与实际 profiler 证据；缺少 GPU 时只登记预算与计划。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 173,
+    "title": "数据加载优化",
+    "outcome": "比较解码、预取、Worker 与设备传输",
+    "primary_project": "P05",
+    "primary_lesson": "L20",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 恢复行为对照、环境与配置记录，以及清晰标明规模限制的实验报告。",
+    "sources": [
+      "S05",
+      "S10"
+    ]
+  },
+  {
+    "id": 174,
+    "title": "编译优化",
+    "outcome": "报告图中断、编译与稳态收益",
+    "primary_project": "P06",
+    "primary_lesson": "L23",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 正确性测试、预热协议、编译与稳态耗时分别报告；硬件加速结论来自实际运行。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 175,
+    "title": "算子与 Attention 优化",
+    "outcome": "解释融合和减少中间访存",
+    "primary_project": "P06",
+    "primary_lesson": "L23",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 正确性测试、预热协议、编译与稳态耗时分别报告；硬件加速结论来自实际运行。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 176,
+    "title": "自定义 Kernel",
+    "outcome": "验证小算子正确性与形状适用范围",
+    "primary_project": "P06",
+    "primary_lesson": "L23",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 正确性测试、预热协议、编译与稳态耗时分别报告；硬件加速结论来自实际运行。",
+    "sources": [
+      "S05"
+    ]
+  },
+  {
+    "id": 177,
+    "title": "DDP",
+    "outcome": "解释副本、数据采样、同步与有效批量",
+    "primary_project": "P06",
+    "primary_lesson": "L24",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 单进程参考、多卡实测、扩展效率与恢复记录；未运行的并行方案继续标为设计选修。",
+    "sources": [
+      "S10",
+      "S05"
+    ]
+  },
+  {
+    "id": 178,
+    "title": "FSDP 与 ZeRO",
+    "outcome": "核算分片节省的状态与通信代价",
+    "primary_project": "P06",
+    "primary_lesson": "L24",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 单进程参考、多卡实测、扩展效率与恢复记录；未运行的并行方案继续标为设计选修。",
+    "sources": [
+      "S10",
+      "S05"
+    ]
+  },
+  {
+    "id": 179,
+    "title": "模型并行",
+    "outcome": "分析张量、流水线和上下文并行",
+    "primary_project": "P06",
+    "primary_lesson": "L24",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p06-inference-systems-lab/: 单进程参考、多卡实测、扩展效率与恢复记录；未运行的并行方案继续标为设计选修。",
+    "sources": [
+      "S10",
+      "S05"
+    ]
+  },
+  {
+    "id": 180,
+    "title": "训练恢复",
+    "outcome": "恢复模型、优化器、随机状态与数据进度",
+    "primary_project": "P05",
+    "primary_lesson": "L20",
+    "level": "elective",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p05-language-model-lab/: 恢复行为对照、环境与配置记录，以及清晰标明规模限制的实验报告。",
+    "sources": [
+      "S05",
+      "S10"
+    ]
+  },
+  {
+    "id": 181,
+    "title": "凭据管理",
+    "outcome": "避免密钥进入代码、提示和日志",
+    "primary_project": "P03",
+    "primary_lesson": "L11",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 角色、租户和审批绑定测试；一份数据保留与密钥处理说明；不得把 CLI 的模拟角色当成生产认证。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 182,
+    "title": "提示注入防护",
+    "outcome": "在程序侧约束不可信内容的权限",
+    "primary_project": "P03",
+    "primary_lesson": "L11",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 角色、租户和审批绑定测试；一份数据保留与密钥处理说明；不得把 CLI 的模拟角色当成生产认证。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 183,
+    "title": "数据隐私管理",
+    "outcome": "定义采集、访问、保留与删除",
+    "primary_project": "P03",
+    "primary_lesson": "L11",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 角色、租户和审批绑定测试；一份数据保留与密钥处理说明；不得把 CLI 的模拟角色当成生产认证。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 184,
+    "title": "依赖与模型来源",
+    "outcome": "记录许可证、来源和完整性",
+    "primary_project": "P03",
+    "primary_lesson": "L11",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 角色、租户和审批绑定测试；一份数据保留与密钥处理说明；不得把 CLI 的模拟角色当成生产认证。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 185,
+    "title": "成本核算",
+    "outcome": "计算每次成功任务的总资源成本",
+    "primary_project": "P03",
+    "primary_lesson": "L12",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p03-durable-tool-workflow/: 故障矩阵、轨迹记录和业务不变量检查；确定性控制器与 LLM 规划器效果分别报告。",
+    "sources": [
+      "S06",
+      "S04"
+    ]
+  },
+  {
+    "id": 186,
+    "title": "技术可行性判断",
+    "outcome": "比较规则、传统 ML 与大模型的收益",
+    "primary_project": "P01",
+    "primary_lesson": "L04",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 187,
+    "title": "行业知识",
+    "outcome": "解释业务流程、约束和错误代价",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 188,
+    "title": "需求沟通",
+    "outcome": "明确输入、输出、指标与验收样例",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 189,
+    "title": "技术写作与英语",
+    "outcome": "写可审查设计、实验与故障报告",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 190,
+    "title": "团队协作",
+    "outcome": "通过契约、审查与复现减少沟通歧义",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 191,
+    "title": "论文阅读",
+    "outcome": "辨认问题、假设、实验与结论限制",
+    "primary_project": "P01",
+    "primary_lesson": "L04",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 192,
+    "title": "论文复现",
+    "outcome": "控制数据、基线、预算并解释结果差距",
+    "primary_project": "P01",
+    "primary_lesson": "L04",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 193,
+    "title": "研究记录",
+    "outcome": "保留假设、配置、失败与对照",
+    "primary_project": "P01",
+    "primary_lesson": "L04",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 194,
+    "title": "项目可运行性",
+    "outcome": "让他人按说明安装、运行和验证",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 195,
+    "title": "项目基准测试",
+    "outcome": "在相同负载与质量条件下公平比较",
+    "primary_project": "P01",
+    "primary_lesson": "L04",
+    "level": "core",
+    "baseline_demonstration": true,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p01-telemetry-experiments/: 一次可复现实验、一个消融表、三个失败案例和一份含限制的英文实验摘要。",
+    "sources": [
+      "S02",
+      "S04"
+    ]
+  },
+  {
+    "id": 196,
+    "title": "个人贡献证据",
+    "outcome": "用修改、设计与实验支持贡献描述",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 197,
+    "title": "系统设计面试",
+    "outcome": "解释容量、数据流、故障和取舍",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 198,
+    "title": "编码面试",
+    "outcome": "在时限内说明正确性、复杂度与边界",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 199,
+    "title": "岗位匹配",
+    "outcome": "将目标职责对应到可核查证据",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 200,
+    "title": "简历与面试表达",
+    "outcome": "说明问题、工作、判断、结果与限制",
+    "primary_project": "P04",
+    "primary_lesson": "L16",
+    "level": "core",
+    "baseline_demonstration": false,
+    "learner_status": "not_started",
+    "expected_evidence": "projects/p04-ai-service-architecture/: SLO 定义、恢复记录、案例页、演示与 JD 对照；个人贡献和未实施部分清晰。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  }
+]

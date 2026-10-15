@@ -1,0 +1,300 @@
+{
+  "measurement_origin": "local_cpu_measured",
+  "scope": "localhost HTTP + lexical retrieval; closed-loop fixed client concurrency; no model or GPU",
+  "python": "3.12.14",
+  "requests": 40,
+  "workers": 4,
+  "warmup_requests_excluded": 1,
+  "wall_seconds": 0.054584858000453096,
+  "requests_per_second": 732.8039581905291,
+  "correct_responses": 40,
+  "errors": 0,
+  "latency_all_responses_ms": {
+    "mean": 5.196738749691576,
+    "p50": 5.385325500355975,
+    "p95": 7.4861521999991965,
+    "p99": 10.320155660374436
+  },
+  "raw_requests": [
+    {
+      "request_id": 0,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.7156849994062213
+    },
+    {
+      "request_id": 1,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 6.55742500021006
+    },
+    {
+      "request_id": 2,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 4.347471998698893
+    },
+    {
+      "request_id": 3,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.733833999329363
+    },
+    {
+      "request_id": 4,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.5681399990135105
+    },
+    {
+      "request_id": 5,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.73690999954124
+    },
+    {
+      "request_id": 6,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.7886500012973556
+    },
+    {
+      "request_id": 7,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.84391099982895
+    },
+    {
+      "request_id": 8,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 6.909820000146283
+    },
+    {
+      "request_id": 9,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.809399001009297
+    },
+    {
+      "request_id": 10,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.90962799974659
+    },
+    {
+      "request_id": 11,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.544358999031829
+    },
+    {
+      "request_id": 12,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 4.4215989983058535
+    },
+    {
+      "request_id": 13,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 6.580940000276314
+    },
+    {
+      "request_id": 14,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.210952998822904
+    },
+    {
+      "request_id": 15,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 12.058115000399994
+    },
+    {
+      "request_id": 16,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.5038339996826835
+    },
+    {
+      "request_id": 17,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 7.60180900033447
+    },
+    {
+      "request_id": 18,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.407426998819574
+    },
+    {
+      "request_id": 19,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.435737000880181
+    },
+    {
+      "request_id": 20,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 4.757734999657259
+    },
+    {
+      "request_id": 21,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.7211239996395307
+    },
+    {
+      "request_id": 22,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 4.453396000826615
+    },
+    {
+      "request_id": 23,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.5611990010220325
+    },
+    {
+      "request_id": 24,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 7.4800649999815505
+    },
+    {
+      "request_id": 25,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.818700999545399
+    },
+    {
+      "request_id": 26,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.037393998965854
+    },
+    {
+      "request_id": 27,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.79880299846991
+    },
+    {
+      "request_id": 28,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.762397999205859
+    },
+    {
+      "request_id": 29,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.33491399983177
+    },
+    {
+      "request_id": 30,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.181947999517433
+    },
+    {
+      "request_id": 31,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.45729800069239
+    },
+    {
+      "request_id": 32,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.0814759993518237
+    },
+    {
+      "request_id": 33,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.9202939988172147
+    },
+    {
+      "request_id": 34,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 6.371826000759029
+    },
+    {
+      "request_id": 35,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 4.062117999637849
+    },
+    {
+      "request_id": 36,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.9462739987357054
+    },
+    {
+      "request_id": 37,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 5.859724999027094
+    },
+    {
+      "request_id": 38,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.493705999062513
+    },
+    {
+      "request_id": 39,
+      "status": 200,
+      "correct": true,
+      "error": null,
+      "latency_ms": 3.0835090001346543
+    }
+  ]
+}

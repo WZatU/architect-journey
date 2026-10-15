@@ -1,0 +1,31 @@
+name: AI engineering curriculum
+on:
+  push:
+    paths: ['ai-engineering/**', '.github/workflows/ai-engineering.yml']
+  pull_request:
+    paths: ['ai-engineering/**', '.github/workflows/ai-engineering.yml']
+permissions:
+  contents: read
+jobs:
+  cpu-baselines:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ai-engineering
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: ai-engineering/requirements.lock
+      - run: python -m pip install -r requirements.lock
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/run_cpu_baselines.py
+      - run: python scripts/benchmark_local.py --requests 40 --workers 4
+      - run: python scripts/validate_curriculum.py
+      - run: python -m compileall -q ai_path scripts projects/p05-language-model-lab
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cpu-baseline-results
+          path: ai-engineering/outputs/*.json

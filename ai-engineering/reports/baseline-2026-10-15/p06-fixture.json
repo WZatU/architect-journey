@@ -1,0 +1,10 @@
+{
+  "measurement_origin": "fixture",
+  "requests": 2,
+  "mean_ttft_s": 0.44999999999999996,
+  "mean_tpot_s": 0.15000000000000002,
+  "mean_e2e_s": 0.95,
+  "output_tokens": 7,
+  "output_tokens_per_wall_second": 5.833333333333334,
+  "note": "TPOT excludes first-token delay; fixture values are not hardware results"
+}

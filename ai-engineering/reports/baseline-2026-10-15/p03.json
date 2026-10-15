@@ -1,0 +1,1 @@
+{"task": {"id": "demo-001", "tenant": "demo", "sku": "SIM-KIT", "quantity": 2, "status": "SUCCEEDED"}, "retry_same_result": true, "inventory": 8, "events": ["PROPOSED", "APPROVED", "SUCCEEDED"], "scope": "local simulated reservation; deterministic controller; no LLM or external writes"}
