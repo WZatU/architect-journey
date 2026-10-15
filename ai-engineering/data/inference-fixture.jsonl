@@ -1,0 +1,2 @@
+{"measurement_origin":"fixture","request_id":"a","start_s":0.0,"end_s":0.9,"token_times_s":[0.4,0.5,0.6,0.7],"output_tokens":4}
+{"measurement_origin":"fixture","request_id":"b","start_s":0.2,"end_s":1.2,"token_times_s":[0.7,0.9,1.1],"output_tokens":3}

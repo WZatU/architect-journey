@@ -1,0 +1,27 @@
+test_complete_experiment_has_holdout_metrics_and_baseline (test_experiment.ExperimentTests.test_complete_experiment_has_holdout_metrics_and_baseline) ... ok
+test_device_partitions_are_disjoint_and_cover_rows (test_experiment.ExperimentTests.test_device_partitions_are_disjoint_and_cover_rows) ... ok
+test_seed_reproduces_data (test_experiment.ExperimentTests.test_seed_reproduces_data) ... ok
+test_cross_tenant_content_never_returned (test_retrieval.RetrievalTests.test_cross_tenant_content_never_returned) ... ok
+test_fixture_label_references_are_valid (test_retrieval.RetrievalTests.test_fixture_label_references_are_valid) ... ok
+test_invalid_requests (test_retrieval.RetrievalTests.test_invalid_requests) ... ok
+test_metric_denominators_and_no_match (test_retrieval.RetrievalTests.test_metric_denominators_and_no_match) ... ok
+test_relevant_result_and_no_expired_document (test_retrieval.RetrievalTests.test_relevant_result_and_no_expired_document) ... ok
+test_authentication_and_invalid_shape (test_service.ServiceTests.test_authentication_and_invalid_shape) ... ok
+test_capacity_rejects_concurrent_request (test_service.ServiceTests.test_capacity_rejects_concurrent_request) ... ok
+test_healthy (test_service.ServiceTests.test_healthy) ... ok
+test_success_and_identity_derived_tenant (test_service.ServiceTests.test_success_and_identity_derived_tenant) ... ok
+test_boolean_token_count_is_not_a_measurement (test_trace_metrics.TraceTests.test_boolean_token_count_is_not_a_measurement) ... ok
+test_reject_mixed_measurement_origins (test_trace_metrics.TraceTests.test_reject_mixed_measurement_origins) ... ok
+test_reject_nonfinite_unordered_and_count_mismatch (test_trace_metrics.TraceTests.test_reject_nonfinite_unordered_and_count_mismatch) ... ok
+test_single_token_tpot_is_undefined (test_trace_metrics.TraceTests.test_single_token_tpot_is_undefined) ... ok
+test_ttft_and_tpot_have_different_denominators (test_trace_metrics.TraceTests.test_ttft_and_tpot_have_different_denominators) ... ok
+test_approval_required_and_tenant_scope (test_workflow.WorkflowTests.test_approval_required_and_tenant_scope) ... ok
+test_concurrent_duplicate_execution_has_one_effect (test_workflow.WorkflowTests.test_concurrent_duplicate_execution_has_one_effect) ... ok
+test_idempotency_key_cannot_change_payload (test_workflow.WorkflowTests.test_idempotency_key_cannot_change_payload) ... ok
+test_insufficient_inventory_does_not_partially_commit (test_workflow.WorkflowTests.test_insufficient_inventory_does_not_partially_commit) ... ok
+test_recovery_after_failure_before_commit (test_workflow.WorkflowTests.test_recovery_after_failure_before_commit) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.107s
+
+OK

@@ -1,0 +1,784 @@
+{
+  "project": "P02",
+  "measurement_origin": "local_cpu_measured",
+  "scope": "retrieval only, original synthetic English SDK documents",
+  "generation_evaluated": false,
+  "results": [
+    {
+      "method": "overlap",
+      "k": 3,
+      "cases": 36,
+      "answerable_cases": 30,
+      "unanswerable_cases": 6,
+      "recall_at_k": 0.8833333333333333,
+      "mrr_at_k": 0.8666666666666667,
+      "empty_result_rate_on_unanswerable": 0.3333333333333333,
+      "mean_latency_ms": 0.14311924991893143,
+      "details": [
+        {
+          "case_id": "q01",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-start",
+            "sdk-current"
+          ],
+          "relevant": [
+            "sdk-start"
+          ]
+        },
+        {
+          "case_id": "q02",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-start",
+            "sdk-retry"
+          ],
+          "relevant": [
+            "sdk-start"
+          ]
+        },
+        {
+          "case_id": "q03",
+          "slice": "boundary",
+          "retrieved": [
+            "sdk-stop",
+            "sdk-current"
+          ],
+          "relevant": [
+            "sdk-stop"
+          ]
+        },
+        {
+          "case_id": "q04",
+          "slice": "boundary",
+          "retrieved": [
+            "sdk-stop",
+            "sdk-time"
+          ],
+          "relevant": [
+            "sdk-stop"
+          ]
+        },
+        {
+          "case_id": "q05",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-frames"
+          ],
+          "relevant": [
+            "sdk-frames"
+          ]
+        },
+        {
+          "case_id": "q06",
+          "slice": "units",
+          "retrieved": [
+            "sdk-frames"
+          ],
+          "relevant": [
+            "sdk-frames"
+          ]
+        },
+        {
+          "case_id": "q07",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-time",
+            "sdk-stop"
+          ],
+          "relevant": [
+            "sdk-time"
+          ]
+        },
+        {
+          "case_id": "q08",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-time"
+          ],
+          "relevant": [
+            "sdk-time"
+          ]
+        },
+        {
+          "case_id": "q09",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-upload"
+          ],
+          "relevant": [
+            "sdk-upload"
+          ]
+        },
+        {
+          "case_id": "q10",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-upload",
+            "sdk-current"
+          ],
+          "relevant": [
+            "sdk-upload"
+          ]
+        },
+        {
+          "case_id": "q11",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-retry"
+          ],
+          "relevant": [
+            "sdk-retry"
+          ]
+        },
+        {
+          "case_id": "q12",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-retry",
+            "sdk-start"
+          ],
+          "relevant": [
+            "sdk-retry"
+          ]
+        },
+        {
+          "case_id": "q13",
+          "slice": "identifier",
+          "retrieved": [
+            "sdk-battery"
+          ],
+          "relevant": [
+            "sdk-battery"
+          ]
+        },
+        {
+          "case_id": "q14",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-battery",
+            "sdk-reserve"
+          ],
+          "relevant": [
+            "sdk-battery"
+          ]
+        },
+        {
+          "case_id": "q15",
+          "slice": "identifier",
+          "retrieved": [
+            "sdk-reserve"
+          ],
+          "relevant": [
+            "sdk-reserve"
+          ]
+        },
+        {
+          "case_id": "q16",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-reserve"
+          ],
+          "relevant": [
+            "sdk-reserve"
+          ]
+        },
+        {
+          "case_id": "q17",
+          "slice": "freshness",
+          "retrieved": [
+            "sdk-current",
+            "sdk-stop"
+          ],
+          "relevant": [
+            "sdk-current"
+          ]
+        },
+        {
+          "case_id": "q18",
+          "slice": "freshness",
+          "retrieved": [
+            "sdk-current",
+            "sdk-upload"
+          ],
+          "relevant": [
+            "sdk-current"
+          ]
+        },
+        {
+          "case_id": "q19",
+          "slice": "tenant",
+          "retrieved": [
+            "demo-private"
+          ],
+          "relevant": [
+            "demo-private"
+          ]
+        },
+        {
+          "case_id": "q20",
+          "slice": "tenant",
+          "retrieved": [
+            "other-private"
+          ],
+          "relevant": [
+            "other-private"
+          ]
+        },
+        {
+          "case_id": "q21",
+          "slice": "unanswerable",
+          "retrieved": [],
+          "relevant": []
+        },
+        {
+          "case_id": "q22",
+          "slice": "unanswerable",
+          "retrieved": [],
+          "relevant": []
+        },
+        {
+          "case_id": "q23",
+          "slice": "short",
+          "retrieved": [
+            "sdk-start"
+          ],
+          "relevant": [
+            "sdk-start"
+          ]
+        },
+        {
+          "case_id": "q24",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-frames"
+          ],
+          "relevant": [
+            "sdk-frames"
+          ]
+        },
+        {
+          "case_id": "q25",
+          "slice": "paraphrase",
+          "retrieved": [
+            "demo-private",
+            "sdk-start",
+            "sdk-stop"
+          ],
+          "relevant": [
+            "sdk-time"
+          ]
+        },
+        {
+          "case_id": "q26",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-retry",
+            "sdk-current",
+            "sdk-frames"
+          ],
+          "relevant": [
+            "sdk-retry"
+          ]
+        },
+        {
+          "case_id": "q27",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-current",
+            "sdk-frames",
+            "sdk-start"
+          ],
+          "relevant": [
+            "sdk-frames"
+          ]
+        },
+        {
+          "case_id": "q28",
+          "slice": "paraphrase",
+          "retrieved": [
+            "demo-private",
+            "sdk-battery",
+            "sdk-current"
+          ],
+          "relevant": [
+            "sdk-upload"
+          ]
+        },
+        {
+          "case_id": "q29",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-stop",
+            "sdk-battery",
+            "sdk-current"
+          ],
+          "relevant": [
+            "sdk-stop"
+          ]
+        },
+        {
+          "case_id": "q30",
+          "slice": "paraphrase",
+          "retrieved": [
+            "demo-private"
+          ],
+          "relevant": [
+            "sdk-battery"
+          ]
+        },
+        {
+          "case_id": "q31",
+          "slice": "multi_evidence",
+          "retrieved": [
+            "sdk-retry",
+            "sdk-battery",
+            "sdk-current"
+          ],
+          "relevant": [
+            "sdk-reserve",
+            "sdk-retry"
+          ]
+        },
+        {
+          "case_id": "q32",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-retry",
+            "sdk-time",
+            "sdk-upload"
+          ],
+          "relevant": [
+            "sdk-time"
+          ]
+        },
+        {
+          "case_id": "q33",
+          "slice": "unanswerable_authorized_scope",
+          "retrieved": [
+            "demo-private"
+          ],
+          "relevant": []
+        },
+        {
+          "case_id": "q34",
+          "slice": "unanswerable",
+          "retrieved": [
+            "sdk-current",
+            "sdk-retry",
+            "sdk-start"
+          ],
+          "relevant": []
+        },
+        {
+          "case_id": "q35",
+          "slice": "unanswerable",
+          "retrieved": [
+            "demo-private",
+            "sdk-current",
+            "sdk-frames"
+          ],
+          "relevant": []
+        },
+        {
+          "case_id": "q36",
+          "slice": "unanswerable",
+          "retrieved": [
+            "sdk-retry",
+            "sdk-upload",
+            "demo-private"
+          ],
+          "relevant": []
+        }
+      ]
+    },
+    {
+      "method": "bm25",
+      "k": 3,
+      "cases": 36,
+      "answerable_cases": 30,
+      "unanswerable_cases": 6,
+      "recall_at_k": 0.9333333333333333,
+      "mrr_at_k": 0.9166666666666666,
+      "empty_result_rate_on_unanswerable": 0.3333333333333333,
+      "mean_latency_ms": 0.09279672222975124,
+      "details": [
+        {
+          "case_id": "q01",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-start",
+            "sdk-current"
+          ],
+          "relevant": [
+            "sdk-start"
+          ]
+        },
+        {
+          "case_id": "q02",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-start",
+            "sdk-retry"
+          ],
+          "relevant": [
+            "sdk-start"
+          ]
+        },
+        {
+          "case_id": "q03",
+          "slice": "boundary",
+          "retrieved": [
+            "sdk-stop",
+            "sdk-current"
+          ],
+          "relevant": [
+            "sdk-stop"
+          ]
+        },
+        {
+          "case_id": "q04",
+          "slice": "boundary",
+          "retrieved": [
+            "sdk-stop",
+            "sdk-time"
+          ],
+          "relevant": [
+            "sdk-stop"
+          ]
+        },
+        {
+          "case_id": "q05",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-frames"
+          ],
+          "relevant": [
+            "sdk-frames"
+          ]
+        },
+        {
+          "case_id": "q06",
+          "slice": "units",
+          "retrieved": [
+            "sdk-frames"
+          ],
+          "relevant": [
+            "sdk-frames"
+          ]
+        },
+        {
+          "case_id": "q07",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-time",
+            "sdk-stop"
+          ],
+          "relevant": [
+            "sdk-time"
+          ]
+        },
+        {
+          "case_id": "q08",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-time"
+          ],
+          "relevant": [
+            "sdk-time"
+          ]
+        },
+        {
+          "case_id": "q09",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-upload"
+          ],
+          "relevant": [
+            "sdk-upload"
+          ]
+        },
+        {
+          "case_id": "q10",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-upload",
+            "sdk-current"
+          ],
+          "relevant": [
+            "sdk-upload"
+          ]
+        },
+        {
+          "case_id": "q11",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-retry"
+          ],
+          "relevant": [
+            "sdk-retry"
+          ]
+        },
+        {
+          "case_id": "q12",
+          "slice": "failure",
+          "retrieved": [
+            "sdk-retry",
+            "sdk-start"
+          ],
+          "relevant": [
+            "sdk-retry"
+          ]
+        },
+        {
+          "case_id": "q13",
+          "slice": "identifier",
+          "retrieved": [
+            "sdk-battery"
+          ],
+          "relevant": [
+            "sdk-battery"
+          ]
+        },
+        {
+          "case_id": "q14",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-battery",
+            "sdk-reserve"
+          ],
+          "relevant": [
+            "sdk-battery"
+          ]
+        },
+        {
+          "case_id": "q15",
+          "slice": "identifier",
+          "retrieved": [
+            "sdk-reserve"
+          ],
+          "relevant": [
+            "sdk-reserve"
+          ]
+        },
+        {
+          "case_id": "q16",
+          "slice": "lookup",
+          "retrieved": [
+            "sdk-reserve"
+          ],
+          "relevant": [
+            "sdk-reserve"
+          ]
+        },
+        {
+          "case_id": "q17",
+          "slice": "freshness",
+          "retrieved": [
+            "sdk-current",
+            "sdk-stop"
+          ],
+          "relevant": [
+            "sdk-current"
+          ]
+        },
+        {
+          "case_id": "q18",
+          "slice": "freshness",
+          "retrieved": [
+            "sdk-current",
+            "sdk-upload"
+          ],
+          "relevant": [
+            "sdk-current"
+          ]
+        },
+        {
+          "case_id": "q19",
+          "slice": "tenant",
+          "retrieved": [
+            "demo-private"
+          ],
+          "relevant": [
+            "demo-private"
+          ]
+        },
+        {
+          "case_id": "q20",
+          "slice": "tenant",
+          "retrieved": [
+            "other-private"
+          ],
+          "relevant": [
+            "other-private"
+          ]
+        },
+        {
+          "case_id": "q21",
+          "slice": "unanswerable",
+          "retrieved": [],
+          "relevant": []
+        },
+        {
+          "case_id": "q22",
+          "slice": "unanswerable",
+          "retrieved": [],
+          "relevant": []
+        },
+        {
+          "case_id": "q23",
+          "slice": "short",
+          "retrieved": [
+            "sdk-start"
+          ],
+          "relevant": [
+            "sdk-start"
+          ]
+        },
+        {
+          "case_id": "q24",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-frames"
+          ],
+          "relevant": [
+            "sdk-frames"
+          ]
+        },
+        {
+          "case_id": "q25",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-stop",
+            "sdk-time",
+            "demo-private"
+          ],
+          "relevant": [
+            "sdk-time"
+          ]
+        },
+        {
+          "case_id": "q26",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-retry",
+            "sdk-upload",
+            "sdk-reserve"
+          ],
+          "relevant": [
+            "sdk-retry"
+          ]
+        },
+        {
+          "case_id": "q27",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-stop",
+            "sdk-current",
+            "sdk-start"
+          ],
+          "relevant": [
+            "sdk-frames"
+          ]
+        },
+        {
+          "case_id": "q28",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-upload",
+            "sdk-current",
+            "sdk-stop"
+          ],
+          "relevant": [
+            "sdk-upload"
+          ]
+        },
+        {
+          "case_id": "q29",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-stop",
+            "sdk-reserve",
+            "sdk-battery"
+          ],
+          "relevant": [
+            "sdk-stop"
+          ]
+        },
+        {
+          "case_id": "q30",
+          "slice": "paraphrase",
+          "retrieved": [
+            "demo-private"
+          ],
+          "relevant": [
+            "sdk-battery"
+          ]
+        },
+        {
+          "case_id": "q31",
+          "slice": "multi_evidence",
+          "retrieved": [
+            "sdk-retry",
+            "sdk-reserve",
+            "sdk-upload"
+          ],
+          "relevant": [
+            "sdk-reserve",
+            "sdk-retry"
+          ]
+        },
+        {
+          "case_id": "q32",
+          "slice": "paraphrase",
+          "retrieved": [
+            "sdk-time",
+            "sdk-upload",
+            "sdk-retry"
+          ],
+          "relevant": [
+            "sdk-time"
+          ]
+        },
+        {
+          "case_id": "q33",
+          "slice": "unanswerable_authorized_scope",
+          "retrieved": [
+            "demo-private"
+          ],
+          "relevant": []
+        },
+        {
+          "case_id": "q34",
+          "slice": "unanswerable",
+          "retrieved": [
+            "sdk-start",
+            "sdk-current",
+            "sdk-upload"
+          ],
+          "relevant": []
+        },
+        {
+          "case_id": "q35",
+          "slice": "unanswerable",
+          "retrieved": [
+            "sdk-stop",
+            "sdk-start",
+            "sdk-current"
+          ],
+          "relevant": []
+        },
+        {
+          "case_id": "q36",
+          "slice": "unanswerable",
+          "retrieved": [
+            "sdk-retry",
+            "sdk-upload",
+            "sdk-start"
+          ],
+          "relevant": []
+        }
+      ]
+    }
+  ]
+}
